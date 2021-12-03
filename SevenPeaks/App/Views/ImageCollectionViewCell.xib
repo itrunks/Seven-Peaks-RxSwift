@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionViewCell" id="aOF-SS-DCN" customClass="ImageCollectionViewCell" customModule="FlickrPhotoSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jAv-uE-Urd">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="360"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="360" id="zAn-cI-Emc"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPt-rz-Zfi">
+                        <rect key="frame" x="0.0" y="196" width="410" height="164"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="oLl-In-61c">
+                                <rect key="frame" x="16" y="0.0" width="352" height="148"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-30-aJa">
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="79.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q7 - Greatness starts, when you don't stop." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BN9-05-BHx">
+                                                <rect key="frame" x="0.0" y="0.0" width="352" height="57.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29.11.2017 15:13" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXg-5Z-PfZ">
+                                                <rect key="frame" x="0.0" y="63.5" width="352" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIM-tA-cRo">
+                                        <rect key="frame" x="0.0" y="97.5" width="352" height="50.5"/>
+                                        <string key="text">Don't leave anything to chance. Whether it comes to comfort, style, or dynamics, the Audi Q5 will win you over from the first moment. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oLl-In-61c" firstAttribute="leading" secondItem="zPt-rz-Zfi" secondAttribute="leading" constant="16" id="4RG-O5-52s"/>
+                            <constraint firstAttribute="bottom" secondItem="oLl-In-61c" secondAttribute="bottom" constant="16" id="BaD-Kz-ZKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="oLl-In-61c" secondAttribute="trailing" constant="42" id="DSU-5k-Z9k"/>
+                            <constraint firstItem="oLl-In-61c" firstAttribute="top" secondItem="zPt-rz-Zfi" secondAttribute="top" id="yZG-qt-F2R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zPt-rz-Zfi" firstAttribute="leading" secondItem="aOF-SS-DCN" secondAttribute="leading" id="23T-RX-s9E"/>
+                <constraint firstAttribute="trailing" secondItem="zPt-rz-Zfi" secondAttribute="trailing" id="71G-rX-h45"/>
+                <constraint firstItem="jAv-uE-Urd" firstAttribute="top" secondItem="aOF-SS-DCN" secondAttribute="top" id="CrC-1L-NJL"/>
+                <constraint firstItem="jAv-uE-Urd" firstAttribute="leading" secondItem="aOF-SS-DCN" secondAttribute="leading" id="iIF-9h-10V"/>
+                <constraint firstAttribute="trailing" secondItem="jAv-uE-Urd" secondAttribute="trailing" id="wLw-Yf-nZE"/>
+                <constraint firstAttribute="bottom" secondItem="zPt-rz-Zfi" secondAttribute="bottom" id="yia-gk-Agz"/>
+            </constraints>
+            <size key="customSize" width="410" height="341"/>
+            <connections>
+                <outlet property="imageView" destination="jAv-uE-Urd" id="8pP-9Z-7q1"/>
+                <outlet property="lbl_car_title" destination="BN9-05-BHx" id="DJd-Zx-cmY"/>
+                <outlet property="lbl_date_and_time" destination="tXg-5Z-PfZ" id="r1S-Tj-Wgg"/>
+                <outlet property="lbl_description" destination="aIM-tA-cRo" id="3Zq-xO-g44"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="-163.71814092953525"/>
+        </collectionViewCell>
+    </objects>
+</document>
